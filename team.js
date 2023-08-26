@@ -38,12 +38,31 @@ let gruppo = [
 ];
 
 const printLol= ()=> {
+    let printFirst= "";
     for (let i = 0; i < gruppo.length; i++) {
-       if (gruppo[i].favoriteVideoGame === "LOL" || "League Of Legends") {
-            console.log(gruppo[i].name);
-       } else {
-            console.log("No one likes LOL... lol!")
+       if (gruppo[i].favoriteVideoGame === ("LOL" || "League Of Legends")) {
+            printFirst= gruppo[i].name;
        }
+    }
+    if (printFirst) {
+        console.log(printFirst);        
+    } else {
+        console.log("No one likes LOL... lol!")
     }
 }
 printLol()
+
+const sameName= ()=> {
+    let firstName= "";
+    for (let i = 0; i < gruppo.length; i++) {
+        if (gruppo[i].name === gruppo[i+1]?.name) {
+            firstName = gruppo[i].name
+        }            
+    }
+    if (firstName) {
+        console.log(firstName);
+    } else {
+        console.log("No, everyone have different names.")
+    }
+}
+sameName()
