@@ -37,4 +37,13 @@ let gruppo = [
   },
 ];
 
-//funzioni per seconda parte
+const printLol= ()=> {
+    for (let i = 0; i < gruppo.length; i++) {
+       if (gruppo[i].favoriteVideoGame === "LOL" || "League Of Legends") {
+            console.log(gruppo[i].name);
+       } else {
+            console.log("No one likes LOL... lol!")
+       }
+    }
+}
+printLol()
