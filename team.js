@@ -36,29 +36,52 @@ let gruppo = [
     petName: "Peter",
   },
 ];
-teamMiddleAge(gruppo);
-//funzioni per seconda parte
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Funzione 3
+
 function teamMiddleAge(array) {
-  let teamAge = 0;
-  for (let i = 0; i < array.length; i++) {
-    teamAge = teamAge + array[i].age;
-  }
-  teamAge = teamAge / 3;
-  return teamAge;
-}
-console.log("L'età media del team è " + teamMiddleAge(gruppo));
-
-//Funzione 4
-
-function whoHasAPet(array) {
-  let petOwners = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].petName !== "") {
-      petOwners.push(array[i].name + " " + array[i].petName);
-    } else {
+    let teamAge = 0;
+    for (let i = 0; i < array.length; i++) {
+      teamAge = teamAge + array[i].age;
     }
+    teamAge = teamAge / 3;
+    return teamAge;
   }
-  return petOwners;
-}
-console.log("I proprietari di animali del team sono " + whoHasAPet(gruppo));
+  console.log("L'età media del team è " + teamMiddleAge(gruppo));
+  
+  //Funzione 4
+  
+  function whoHasAPet(array) {
+    let petOwners = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].petName !== "") {
+        petOwners.push(array[i].name + " " + array[i].petName);
+      } else {
+      }
+    }
+    return petOwners;
+  }
+  console.log("I proprietari di animali del team sono " + whoHasAPet(gruppo));
+  
