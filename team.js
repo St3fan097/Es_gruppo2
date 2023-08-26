@@ -37,6 +37,53 @@ let gruppo = [
   },
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const printLol= ()=> {
     let printFirst= "";
     for (let i = 0; i < gruppo.length; i++) {
