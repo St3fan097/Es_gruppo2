@@ -37,27 +37,26 @@ let gruppo = [
   },
 ];
 
+function sortByName(array) {
+  let names = [];
+  for (let i = 0; i < array.length; i++) {
+    names.push(array[i].name + " " + array[i].surname);
+  }
+  names.sort();
+  return names;
+}
 
+console.log(sortByName(gruppo));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function orderAge(array) {
+  let ages = [];
+  for (let i = 0; i < array.length; i++) {
+    ages.push(array[i].age);
+  }
+  ages.sort((a, b) => a - b);
+  return ages;
+}
+console.log(orderAge(gruppo));
 
 //Funzione 3
 
@@ -84,4 +83,4 @@ function teamMiddleAge(array) {
     return petOwners;
   }
   console.log("I proprietari di animali del team sono " + whoHasAPet(gruppo));
-  
+
